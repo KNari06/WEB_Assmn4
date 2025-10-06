@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Car</title>
+    <link rel="stylesheet" href="./nura.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <a href="#" class="menu_logo">
+          <img src="./image/360_F_699905865_uAhm2hwqnIucPWzmZXuE8VBJ7dKudgZR-removebg-preview.png" alt="Pokemons" />
+          D&C
+        </a>
+        <a href="/main.html" class="menu_link-ative">Home</a>
+        <a href="./index.html" class="menu_link">Apps</a>
+        <a href="/catolog.html" class="menu_link">Catalog</a>
+        <a href="/nura/about.html" class="menu_link">About us</a>
+        <li class="nav-item"><a class="nav-link" href="/Demo/components.html">Showcase</a></li>
+      </nav>
+    </header>
+
+    <label for="sidebarToggle" class="sidebar-button">&#9776; Filters</label>
+<input type="checkbox" id="sidebarToggle" hidden />
+
+<aside class="sidebar">
+  <h2>Filters</h2>
+  <form>
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select a country</option>
+      <option value="usa">USA</option>
+      <option value="japan">Japan</option>
+      <option value="germany">Germany</option>
+      <option value="russia">Russia</option>
+      <option value="kz">Kazakhstan</option>
+    </select>
+
+    <label for="city">City:</label>
+    <select id="city" name="city" required>
+      <option value="">Select a city</option>
+      <option value="newyork">New York (USA)</option>
+      <option value="losangeles">Los Angeles (USA)</option>
+      <option value="chicago">Chicago (USA)</option>
+      <option value="tokyo">Tokyo (Japan)</option>
+      <option value="osaka">Osaka (Japan)</option>
+      <option value="kyoto">Kyoto (Japan)</option>
+      <option value="berlin">Berlin (Germany)</option>
+      <option value="munich">Munich (Germany)</option>
+      <option value="hamburg">Hamburg (Germany)</option>
+      <option value="moscow">Moscow (Russia)</option>
+      <option value="saintpetersburg">Saint Petersburg (Russia)</option>
+      <option value="novosibirsk">Novosibirsk (Russia)</option>
+      <option value="almaty">Almaty (Kazakhstan)</option>
+      <option value="astana">Astana (Kazakhstan)</option>
+      <option value="shymkent">Shymkent (Kazakhstan)</option>
+    </select>
+
+    <label for="brand">Car Brand:</label>
+    <select id="brand" name="brand" required>
+      <option value="">Select a brand</option>
+      <option value="bmw">BMW</option>
+      <option value="audi">Audi</option>
+      <option value="toyota">Toyota</option>
+      <option value="mercedes">Mercedes</option>
+    </select>
+
+    <label for="year">Year:</label>
+    <select id="year" name="year" required>
+      <option value="">Select a year</option>
+      <option value="2025">2025</option>
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+    </select>
+
+    <label for="price">Price (up to):</label>
+    <input type="range" id="price" name="price" min="10000" max="200000" step="1000" value="50000" />
+    <span id="priceValue">50,000</span> $
+
+    <button type="submit">Apply</button>
+  </form>
+</aside>
+
+
+    <section class="apps">
+      <div class="apps_left">
+        <img src="./image/360_F_699905865_uAhm2hwqnIucPWzmZXuE8VBJ7dKudgZR-removebg-preview.png" 
+          alt="DreamCar App" class="img" />
+      <div class="rating">
+        <span class="score">5.0</span>
+        <span class="stars">⭐⭐⭐⭐⭐</span>
+      </div>
+      </div>
+      <div class="apps_text">
+      
+        <h1>DreamCar Mobile App</h1>
+        <p>
+          Stay connected to your dream cars anywhere.  
+          With the DreamCar app, you can:  
+        </p>
+        <ul>
+          <li>Browse our luxury car catalog</li>
+          <li>Book consultations instantly</li>
+          <li>Use AR to view cars in real size</li>
+          <li>Track your purchase process in real-time</li>
+        </ul>
+        <div class="apps_buttons">
+        <a href="#" class="appstore">Download on App Store</a>
+        <a href="#" class="googleplay">Get it on Google Play</a>
+        </div>
+      </div>
+    </section>
+  
+  <footer class="footer">
+    <h2>User Reviews</h2>
+    <div class="reviews">
+      <div class="review">
+        <p class="review-text">Great app! User-friendly interface and fast operation.</p>
+        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+        <p class="review-author">— Aliya</p>
+      </div>
+      <div class="review">
+        <p class="review-text">I really liked it, especially the design. I recommend it to my friends!</p>
+        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+        <p class="review-author">— Nursultan</p>
+      </div>
+      <div class="review">
+        <p class="review-text">The functionality is cool, but you can also add new features.</p>
+        <div class="review-rating">⭐⭐⭐⭐</div>
+        <p class="review-author">— Daniyar</p>
+      </div>
+    </div>
+  </footer>
+
+
+    <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const priceInput = document.getElementById('price');
+    const priceValue = document.getElementById('priceValue');
+
+    priceInput.addEventListener('input', () => {
+      priceValue.textContent = Number(priceInput.value).toLocaleString();
+    });
+  });
+</script>
+
+  </body>
+</html>

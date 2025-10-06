@@ -1,0 +1,107 @@
+/* ===== Theme variables ===== */
+:root{
+  --bg: #1D1616;     /* page background */
+  --bg-2: #2A1F1F;   /* cards */
+  --muted: #151010;  /* darker */
+  --text: #EEEEEE;   /* primary text */
+  --accent: #D84040; /* red accent (buttons/headings) */
+  --accent-2: #FF4C4C;
+}
+
+/* ===== Page basics ===== */
+body.bg-dark-1 {
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Reusable section wrapper for demo blocks */
+.association {
+  border-radius: 10px;
+}
+
+/* Card like surfaces in Dark theme */
+.bg-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  background-color: var(--bg-2);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+/* Muted small boxes */
+.bg-muted {
+  background-color: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+
+/* Footer */
+.bg-footer {
+  background: linear-gradient(180deg, #1D1616 0%, #610a0a 80%);
+  color: #fff;
+}
+
+/* Accent headings */
+.accent {
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+/* Card custom for small hover effect */
+.card-custom {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card-custom:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(216,64,64,0.12);
+}
+
+/* Navbar brand text */
+.brand-title {
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Larger carousel images on desktop for readability */
+.carousel-img {
+  width: auto;
+  height: 450px;
+  padding: 20px;
+  object-fit: cover;
+}
+
+/* Cards images & layout */
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Small screens: adjust typography for readability */
+@media (max-width: 600px){
+  .carousel-img { height: 220px; }
+  .card-img-top { height: 160px; }
+  h1.display-6 { font-size: 1.4rem; }
+}
+
+/* Tablet adjustments */
+@media (min-width: 601px) and (max-width: 1024px){
+  .carousel-img { height: 320px; }
+}
+
+/* Accessibility focus state */
+a:focus, button:focus, input:focus {
+  outline: 3px solid rgba(216,64,64,0.22);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Utility: small text muted light */
+.text-muted-light { color: rgba(238,238,238,0.65); }
+
+/* Keep images responsive in cards */
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}

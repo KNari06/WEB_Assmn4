@@ -1,0 +1,209 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #1D1616;
+  color: #EEEEEE;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/*header*/
+
+header {
+  padding: 55px;
+  padding-bottom: 0;
+}
+
+nav.menu {
+  display: flex;
+  align-items: center;  
+}
+
+nav.menu a {
+  text-decoration: none;    
+  color: #EEEEEE;
+  transition: 300ms;
+}
+
+nav.menu a:hover {
+  color: #D84040;
+}
+
+a.menu_logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  text-indent: 20px;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+.menu_link,
+.menu_link-active {
+  padding: 10px;
+  margin: 10px;
+}
+
+.menu_link-active {
+  font-weight: bold;
+}
+
+/* Контейнер для основного контента */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  margin-bottom: 200px;
+}
+
+/* Заголовки */
+
+.text{
+    margin-top: 250px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #FF4C4C; /* яркий красный акцент */
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #FF6B6B;
+}
+
+/* Параграфы */
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  transition: font-size 0.3s ease; /* плавный переход при смене размеров */
+}
+
+footer {
+  padding: 55px;
+  background: linear-gradient(180deg, #1D1616 0%, #610a0a 80%);
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
+  text-indent: 15px;
+}
+
+.footer_left p {
+  margin: 10px;
+}
+
+.footer_right {
+  display: flex;
+}
+
+.footer_list {
+  padding: 10px;
+  margin: 10px;
+}
+
+.footer_list {
+  font-weight: bold;
+  padding: 20px, 0px;
+}
+
+.footer_list ul {
+  list-style: none;
+}
+
+.footer_list ul li a {
+  color: #EEEEEE;
+  display: block;
+  padding: 15px 20px;
+  padding-left: 0px;
+  text-decoration: none;
+}
+
+.footer_list ul li a:hover {
+  text-decoration: underline;
+}
+
+/* === MOBILE === */
+@media (max-width: 600px) {
+  nav.menu {
+    flex-direction: column;       
+    align-items: center;          
+  }
+
+  a.menu_logo {
+    margin-bottom: 15px;          
+    font-size: 20px;
+  }
+
+  nav.menu a {
+    font-size: 16px;
+    margin: 5px 0;
+    padding: 8px;
+    display: block;               
+  }
+}
+
+/* 📱 Планшеты */
+@media (min-width: 601px) and (max-width: 1024px) {
+  nav.menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav.menu a {
+    font-size: 16px;
+    margin: 6px;
+    padding: 8px;
+  }
+
+  a.menu_logo {
+    font-size: 20px;
+  }
+    h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+
+
+/* 💻 Десктоп */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 18px;
+  }
+  nav.menu a {
+    font-size: 18px;
+  }
+}
