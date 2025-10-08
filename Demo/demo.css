@@ -1,10 +1,10 @@
 /* ===== Theme variables ===== */
 :root{
-  --bg: #1D1616;     /* page background */
-  --bg-2: #2A1F1F;   /* cards */
-  --muted: #151010;  /* darker */
-  --text: #EEEEEE;   /* primary text */
-  --accent: #D84040; /* red accent (buttons/headings) */
+  --bg: #1D1616;     
+  --bg-2: #2A1F1F;   
+  --muted: #151010;  
+  --text: #EEEEEE;   
+  --accent: #D84040; 
   --accent-2: #FF4C4C;
 }
 
@@ -97,10 +97,10 @@ a:focus, button:focus, input:focus {
   border-radius: 6px;
 }
 
-/* Utility: small text muted light */
+
 .text-muted-light { color: rgba(238,238,238,0.65); }
 
-/* Keep images responsive in cards */
+
 img.img-fluid {
   max-width: 100%;
   height: auto;
