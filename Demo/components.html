@@ -5,33 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DreamCar — Bootstrap Showcase</title>
 
-  <!-- Bootstrap CSS (CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom demo CSS -->
   <link rel="stylesheet" href="demo.css">
 </head>
 <body class="bg-dark-1 text-light">
 
-  <!-- ====== Header / Navbar (uses your logo and links) ====== -->
+
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
       <div class="container">
-        <!-- Logo (your image) -->
+
         <a class="navbar-brand d-flex align-items-center gap-2" href="../main.html">
           <img src="../img/360_F_699905865_uAhm2hwqnIucPWzmZXuE8VBJ7dKudgZR-removebg-preview.png"
                alt="DreamCar logo" width="44" height="44" loading="lazy">
           <span class="brand-title">D&amp;C</span>
         </a>
 
-        <!-- Toggler for small screens (Bootstrap's collapse) -->
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#mainNavbar" aria-controls="mainNavbar"
                 aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Menu links (keeps your links) -->
+
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="../main.html">Home</a></li>
@@ -47,7 +45,7 @@
 
   <main class="container my-5">
 
-    <!-- ====== Intro / anchors ====== -->
+
     <section id="intro" class="association text-center mb-5">
       <h1 class="display-6 fw-bold accent">Bootstrap Components Showcase</h1>
       <p class="lead mx-auto" style="max-width:900px;">
@@ -71,25 +69,9 @@
     <section id="grid" class="association py-4">
       <h2 class="h4 accent mb-3">Task 3 — Bootstrap Grid Layout</h2>
 
-      <!-- Two-column section: col-lg-6 each -->
-      <div class="container-fluid mb-4">
-        <div class="row g-3 align-items-center">
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="p-3 bg-card rounded card-custom h-100">
-              <h3 class="h6">Two-column block (left)</h3>
-              <p class="mb-0">On large screens this occupies <code>col-lg-6</code>. On smaller screens it becomes full width.</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="p-3 bg-card rounded card-custom h-100">
-              <h3 class="h6">Two-column block (right)</h3>
-              <p class="mb-0">Use <code>col-sm</code>, <code>col-md</code> and <code>col-lg</code> to control layout across breakpoints.</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Three-column section: col-lg-4 each -->
+
+
       <div class="container-fluid">
         <div class="row g-3">
           <div class="col-12 col-md-6 col-lg-4">
@@ -133,7 +115,7 @@
         </div>
       </div>
 
-      <p class="small text-muted mb-0">Examples: <code>mt-lg-4</code> adds top margin on large screens, <code>px-sm-2</code> adds horizontal padding on small screens.</p>
+      <p class="small text-muted mb-0">Examples: adds top margin on large screens,adds horizontal padding on small screens.</p>
     </section>
 
     <!-- ====== Task 5: Bootstrap Navbar (demonstration) ====== -->
@@ -163,7 +145,7 @@
         </div>
       </div>
 
-      <p class="small text-muted">All spacing around buttons uses Bootstrap utilities like <code>me-2</code>, <code>mb-3</code>, etc.</p>
+      <p class="small text-muted">All spacing around buttons uses Bootstrap utilities like , etc.</p>
     </section>
 
     <!-- ====== Task 7: Carousel (9 images) ====== -->
@@ -309,17 +291,6 @@
       </form>
     </section>
 
-    <!-- ====== Task 10: Accessibility notes ====== -->
-    <section id="accessibility" class="association py-4">
-      <h2 class="h4 accent mb-3">Task 10 — Accessibility</h2>
-
-      <ul class="small">
-        <li>Use semantic elements: <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>.</li>
-        <li>All images have <code>alt</code> text and <code>loading="lazy"</code> for performance.</li>
-        <li>Forms include associated labels (visible or <code>visually-hidden</code> for design).</li>
-        <li>Navbar collapse button has <code>aria-controls</code> and <code>aria-label</code>.</li>
-      </ul>
-    </section>
 
   </main>
 
