@@ -8,106 +8,74 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+        <!-- SIDEBAR + OVERLAY -->
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+    <aside class="sidebar" id="sidebar" aria-hidden="true">
+      <button class="close-btn" id="closeSidebar">✕</button>
+      <a href="./main.html" class="side-link">Home</a>
+      <a href="./nura/index.html" class="side-link">Apps</a>
+      <a href="./catolog.html" class="side-link">Catalog</a>
+      <a href="./nura/about.html" class="side-link">About us</a>
+      <a href="./Demo/components.html" class="side-link">Showcase</a>
+    </aside>
+
+    <!-- HEADER -->
     <header>
-      <nav class="menu">
-        <a href="#" class="menu_logo">
-          <img src="./img/360_F_699905865_uAhm2hwqnIucPWzmZXuE8VBJ7dKudgZR-removebg-preview.png" alt="Pokemons" />
-          D&C
-        </a>
-        <a href="./main.html" class="menu_link-ative">Home</a>
-        <a href="./nura/index.html" class="menu_link">Apps</a>
-        <a href="/catolog.html" class="menu_link">Catalog</a>
-        <a href="/nura/about.html" class="menu_link">About us</a>
-        <li class="nav-item"><a class="nav-link" href="./Demo/components.html">Showcase</a></li>
-      </nav>
+      <div class="container">
+        <nav class="menu">
+          <a href="#" class="menu_logo">
+            <img src="./img/360_F_699905865_uAhm2hwqnIucPWzmZXuE8VBJ7dKudgZR-removebg-preview.png" alt="D&C logo" width="44" height="44" />
+            <span>D&C</span>
+          </a>
+
+          <div class="menu_links">
+            <a href="./main.html" class="menu_link active">Home</a>
+            <a href="./nura/index.html" class="menu_link">Apps</a>
+            <a href="./catolog.html" class="menu_link">Catalog</a>
+            <a href="./nura/about.html" class="menu_link">About us</a>
+            <a href="./Demo/components.html" class="menu_link">Showcase</a>
+          </div>
+
+          <!-- burger -->
+          <button class="burger" id="burger" aria-expanded="false">
+            <span class="lines"><span></span><span></span><span></span></span>
+          </button>
+        </nav>
+      </div>
     </header>
 
-    <label for="sidebarToggle" class="sidebar-button">&#9776; Filters</label>
-<input type="checkbox" id="sidebarToggle" hidden />
-
-<aside class="sidebar">
-  <h2>Filters</h2>
-  <form>
-    <label for="country">Country:</label>
-    <select id="country" name="country" required>
-      <option value="">Select a country</option>
-      <option value="usa">USA</option>
-      <option value="japan">Japan</option>
-      <option value="germany">Germany</option>
-      <option value="russia">Russia</option>
-      <option value="kz">Kazakhstan</option>
-    </select>
-
-    <label for="city">City:</label>
-    <select id="city" name="city" required>
-      <option value="">Select a city</option>
-      <option value="newyork">New York (USA)</option>
-      <option value="losangeles">Los Angeles (USA)</option>
-      <option value="chicago">Chicago (USA)</option>
-      <option value="tokyo">Tokyo (Japan)</option>
-      <option value="osaka">Osaka (Japan)</option>
-      <option value="kyoto">Kyoto (Japan)</option>
-      <option value="berlin">Berlin (Germany)</option>
-      <option value="munich">Munich (Germany)</option>
-      <option value="hamburg">Hamburg (Germany)</option>
-      <option value="moscow">Moscow (Russia)</option>
-      <option value="saintpetersburg">Saint Petersburg (Russia)</option>
-      <option value="novosibirsk">Novosibirsk (Russia)</option>
-      <option value="almaty">Almaty (Kazakhstan)</option>
-      <option value="astana">Astana (Kazakhstan)</option>
-      <option value="shymkent">Shymkent (Kazakhstan)</option>
-    </select>
-
-    <label for="brand">Car Brand:</label>
-    <select id="brand" name="brand" required>
-      <option value="">Select a brand</option>
-      <option value="bmw">BMW</option>
-      <option value="audi">Audi</option>
-      <option value="toyota">Toyota</option>
-      <option value="mercedes">Mercedes</option>
-    </select>
-
-    <label for="year">Year:</label>
-    <select id="year" name="year" required>
-      <option value="">Select a year</option>
-      <option value="2025">2025</option>
-      <option value="2024">2024</option>
-      <option value="2023">2023</option>
-      <option value="2022">2022</option>
-      <option value="2021">2021</option>
-      <option value="2020">2020</option>
-      <option value="2019">2019</option>
-      <option value="2018">2018</option>
-      <option value="2017">2017</option>
-      <option value="2016">2016</option>
-      <option value="2015">2015</option>
-    </select>
-
-    <label for="price">Price (up to):</label>
-    <input type="range" id="price" name="price" min="10000" max="200000" step="1000" value="50000" />
-    <span id="priceValue">50,000</span> $
-
-    <button type="submit">Apply</button>
-  </form>
-</aside>
+    <script src="/super.js"></script>
 
 
-    <section class="welcome">
+
+
+
+  <section class="welcome">
+    <!-- left column: текст + кнопка -->
+    <div class="welcome_left">
       <div class="welcome_text">
         <h1 class="welcome_header">DreamCar.kz</h1>
         <p>
           D&C — premium cars, delivered on demand.
-
-          We source and deliver any car you desire — from rare supercars to limited-edition collectibles. Worldwide service, full transaction support, and guaranteed authenticity.
-
+          We source and deliver any car you desire
+           — from rare supercars to limited-edition collectibles. 
+          Worldwide service, full transaction support, and guaranteed authenticity.
           You dream it — we deliver it.
-
           Get in touch, and let us find the car that defines your style.
         </p>
-        <a href="#" class="welcome_button">Consult today</a>
       </div>
-      <img class="welcome_image" src="./img/Gemini_Generated_Image_6faadg6faadg6faa-removebg-preview (1).png" alt="all cars" />
-    </section>
+
+      <a href="#" class="welcome_button">Consult today</a>
+    </div>
+
+    <!-- right column: изображение -->
+    <img class="welcome_image"
+        src="./img/Gemini_Generated_Image_6faadg6faadg6faa-removebg-preview (1).png"
+        alt="all cars" />
+  </section>
+
+
  
     
 
@@ -146,9 +114,7 @@
 
     <footer>
       <div class="footer_left">
-        <p class="footer_logo">
-          <img src="./img/360_F_699905865_uAhm2hwqnIucPWzmZXuE8VBJ7dKudgZR-removebg-preview.png" alt="T" class="poke-img" />
-        </p>
+          <img src="./img/360_F_699905865_uAhm2hwqnIucPWzmZXuE8VBJ7dKudgZR-removebg-preview.png" alt="T" class="footer-logo" />
         <p>
           The consistent order and financial growth drive the development of key tasks. Essential quantitative preparations remain a focus of interest.
         </p>

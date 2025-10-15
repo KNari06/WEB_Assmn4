@@ -7,19 +7,44 @@
   <link rel="stylesheet" href="./nura2.css" />
 </head>
 <body>
-  <header>
-    <nav class="menu">
-      <a href="#" class="menu_logo">
-        <img src="./image/360_F_699905865_uAhm2hwqnIucPWzmZXuE8VBJ7dKudgZR-removebg-preview.png" alt="DreamCar" />
-        D&C
-      </a>
-      <a href="/main.html" class="menu_link">Home</a>
-      <a href="./index.html" class="menu_link">Apps</a>
-      <a href="/catolog.html" class="menu_link">Catalog</a>
-      <a href="./about.html" class="menu_link-active">About Us</a>
-      <li class="nav-item"><a class="nav-link" href="/Demo/components.html">Showcase</a></li>
-    </nav>
-  </header>
+        <!-- SIDEBAR + OVERLAY -->
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+    <aside class="sidebar" id="sidebar" aria-hidden="true">
+      <button class="close-btn" id="closeSidebar">✕</button>
+      <a href="./main.html" class="side-link">Home</a>
+      <a href="./nura/index.html" class="side-link">Apps</a>
+      <a href="./catolog.html" class="side-link">Catalog</a>
+      <a href="./nura/about.html" class="side-link">About us</a>
+      <a href="./Demo/components.html" class="side-link">Showcase</a>
+    </aside>
+
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <nav class="menu">
+          <a href="#" class="menu_logo">
+            <img src="/img/360_F_699905865_uAhm2hwqnIucPWzmZXuE8VBJ7dKudgZR-removebg-preview.png" alt="D&C logo" width="44" height="44" />
+            <span>D&C</span>
+          </a>
+
+          <div class="menu_links">
+            <a href="./main.html" class="menu_link active">Home</a>
+            <a href="./nura/index.html" class="menu_link">Apps</a>
+            <a href="./catolog.html" class="menu_link">Catalog</a>
+            <a href="./nura/about.html" class="menu_link">About us</a>
+            <a href="./Demo/components.html" class="menu_link">Showcase</a>
+          </div>
+
+          <!-- burger -->
+          <button class="burger" id="burger" aria-expanded="false">
+            <span class="lines"><span></span><span></span><span></span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <script src="/super.js"></script>
 
   <main class="about">
     <label for="sidebarToggle" class="sidebar-button">&#9776; Filters</label>

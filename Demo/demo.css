@@ -22,6 +22,22 @@ body.bg-dark-1 {
   border-radius: 10px;
 }
 
+#intro {
+  margin-top: 210px;
+}
+#carousel{
+  margin-top: 210px;
+}
+#cards{
+  margin-top: 210px;
+}
+#form{
+  margin-top: 210px;
+}
+
+#foot{
+  margin-top: 250px;
+}
 /* Card like surfaces in Dark theme */
 .bg-card {
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
