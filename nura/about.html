@@ -12,11 +12,11 @@
 
     <aside class="sidebar" id="sidebar" aria-hidden="true">
       <button class="close-btn" id="closeSidebar">✕</button>
-      <a href="./main.html" class="side-link">Home</a>
-      <a href="./nura/index.html" class="side-link">Apps</a>
-      <a href="./catolog.html" class="side-link">Catalog</a>
-      <a href="./nura/about.html" class="side-link">About us</a>
-      <a href="./Demo/components.html" class="side-link">Showcase</a>
+      <a href="/main.html" class="side-link">Home</a>
+      <a href="/nura/index.html" class="side-link">Apps</a>
+      <a href="/catolog.html" class="side-link">Catalog</a>
+      <a href="/nura/about.html" class="side-link">About us</a>
+      <a href="/Demo/components.html" class="side-link">Showcase</a>
     </aside>
 
     <!-- HEADER -->
@@ -29,11 +29,11 @@
           </a>
 
           <div class="menu_links">
-            <a href="./main.html" class="menu_link active">Home</a>
-            <a href="./nura/index.html" class="menu_link">Apps</a>
-            <a href="./catolog.html" class="menu_link">Catalog</a>
-            <a href="./nura/about.html" class="menu_link">About us</a>
-            <a href="./Demo/components.html" class="menu_link">Showcase</a>
+            <a href="/main.html" class="menu_link active">Home</a>
+            <a href="/nura/index.html" class="menu_link">Apps</a>
+            <a href="/catolog.html" class="menu_link">Catalog</a>
+            <a href="/nura/about.html" class="menu_link">About us</a>
+            <a href="/Demo/components.html" class="menu_link">Showcase</a>
           </div>
 
           <!-- burger -->
@@ -46,75 +46,6 @@
 
     <script src="/super.js"></script>
 
-  <main class="about">
-    <label for="sidebarToggle" class="sidebar-button">&#9776; Filters</label>
-<input type="checkbox" id="sidebarToggle" hidden />
-
-<aside class="sidebar">
-  <h2>Filters</h2>
-  <form>
-    <label for="country">Country:</label>
-    <select id="country" name="country" required>
-      <option value="">Select a country</option>
-      <option value="usa">USA</option>
-      <option value="japan">Japan</option>
-      <option value="germany">Germany</option>
-      <option value="russia">Russia</option>
-      <option value="kz">Kazakhstan</option>
-    </select>
-
-    <label for="city">City:</label>
-    <select id="city" name="city" required>
-      <option value="">Select a city</option>
-      <option value="newyork">New York (USA)</option>
-      <option value="losangeles">Los Angeles (USA)</option>
-      <option value="chicago">Chicago (USA)</option>
-      <option value="tokyo">Tokyo (Japan)</option>
-      <option value="osaka">Osaka (Japan)</option>
-      <option value="kyoto">Kyoto (Japan)</option>
-      <option value="berlin">Berlin (Germany)</option>
-      <option value="munich">Munich (Germany)</option>
-      <option value="hamburg">Hamburg (Germany)</option>
-      <option value="moscow">Moscow (Russia)</option>
-      <option value="saintpetersburg">Saint Petersburg (Russia)</option>
-      <option value="novosibirsk">Novosibirsk (Russia)</option>
-      <option value="almaty">Almaty (Kazakhstan)</option>
-      <option value="astana">Astana (Kazakhstan)</option>
-      <option value="shymkent">Shymkent (Kazakhstan)</option>
-    </select>
-
-    <label for="brand">Car Brand:</label>
-    <select id="brand" name="brand" required>
-      <option value="">Select a brand</option>
-      <option value="bmw">BMW</option>
-      <option value="audi">Audi</option>
-      <option value="toyota">Toyota</option>
-      <option value="mercedes">Mercedes</option>
-    </select>
-
-    <label for="year">Year:</label>
-    <select id="year" name="year" required>
-      <option value="">Select a year</option>
-      <option value="2025">2025</option>
-      <option value="2024">2024</option>
-      <option value="2023">2023</option>
-      <option value="2022">2022</option>
-      <option value="2021">2021</option>
-      <option value="2020">2020</option>
-      <option value="2019">2019</option>
-      <option value="2018">2018</option>
-      <option value="2017">2017</option>
-      <option value="2016">2016</option>
-      <option value="2015">2015</option>
-    </select>
-
-    <label for="price">Price (up to):</label>
-    <input type="range" id="price" name="price" min="10000" max="200000" step="1000" value="50000" />
-    <span id="priceValue">50,000</span> $
-
-    <button type="submit">Apply</button>
-  </form>
-</aside>
 
     <section class="about_intro">
       <h1>DreamCar</h1>
@@ -135,6 +66,49 @@
         <li>🌍 Impact – creating products that inspire millions worldwide</li>
       </ul>
     </section>
+
+<section class="faq">
+  <h1>FAQ - Frequently Asked Questions</h1>
+
+  <div class="accordion-item">
+    <div class="accordion-title">1. What services do you offer?</div>
+    <div class="accordion-content">
+      <p>We offer travel planning, hotel booking, and city tours across Kazakhstan.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-title">2. How can I contact support?</div>
+    <div class="accordion-content">
+      <p>You can contact us by email, phone, or through our contact form on this page.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-title">3. Do you offer student discounts?</div>
+    <div class="accordion-content">
+      <p>Yes! We offer up to 15% off for students with a valid ID card.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Popup trigger -->
+<section class="popup_section">
+  <button id="openPopupBtn">Subscribe</button>
+</section>
+
+<!-- Popup form  -->
+<div class="popup_overlay" id="popupOverlay">
+  <div class="popup_box">
+    <span id="closePopupBtn" class="close_btn">&times;</span>
+    <h2>Subscribe to our newsletter</h2>
+    <form id="popupForm">
+      <input type="text" placeholder="Your name" required />
+      <input type="email" placeholder="Your email" required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
 
     <section class="about_clients">
   <h2>Our Clients</h2>
@@ -171,5 +145,6 @@
   <footer>
     <p>© 2025 DreamCar. All rights reserved.</p>
   </footer>
+  <script src="/script.js"></script>
 </body>
 </html>

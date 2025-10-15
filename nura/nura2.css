@@ -191,93 +191,6 @@ nav.menu {
   }
 }
 
-/* Кнопка для открытия панели */
-.sidebar-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: #D84040;
-  color: #fff;
-  padding: 12px 18px;
-  border-radius: 8px;
-  font-size: 18px;
-  cursor: pointer;
-  z-index: 1001;
-  user-select: none;
-  transition: background-color 0.3s ease;
-}
-
-.sidebar-button:hover {
-  background-color: #8E1616;
-}
-
-/* Скрытый чекбокс */
-#sidebarToggle {
-  display: none;
-}
-
-/* Боковая панель - изначально спрятана слева */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -320px;
-  width: 300px;
-  height: 100vh;
-  background-color: #2c2020;
-  padding: 40px 30px;
-  box-shadow: 3px 0 10px rgba(0,0,0,0.5);
-  transition: left 0.3s ease;
-  z-index: 1000;
-  color: #EEEEEE;
-  overflow-y: auto;
-}
-
-/* Показываем панель, когда чекбокс включен */
-#sidebarToggle:checked ~ .sidebar {
-  left: 0;
-}
-
-/* Стили внутри панели */
-.sidebar h2 {
-  color: #D84040;
-  margin-bottom: 30px;
-  font-size: 24px;
-}
-
-.sidebar label {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.sidebar select,
-.sidebar input[type="range"] {
-  width: 100%;
-  padding: 8px 10px;
-  border-radius: 6px;
-  border: none;
-  margin-bottom: 15px;
-  font-size: 16px;
-}
-
-.sidebar button[type="submit"] {
-  background-color: #D84040;
-  border: none;
-  color: #fff;
-  padding: 12px 20px;
-  width: 100%;
-  font-size: 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.sidebar button[type="submit"]:hover {
-  background-color: #8E1616;
-}
-
 
 img {
   width: auto;
@@ -298,10 +211,10 @@ img {
   margin: 0 auto;
   padding: 60px 20px;
   color: #EEEEEE;
+  text-align: center;
 }
 
 .about_intro {
-  text-align: center;
   margin-bottom: 70px;
 }
 
@@ -309,13 +222,17 @@ img {
   font-size: 2.5rem;
   color: #D84040;
   margin-bottom: 40px;
+    display: flex;
+  justify-content: center;
 }
+
 
 .about_intro p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #ccc;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
+  max-width: 700px;
 }
 
 .about_values {
@@ -326,19 +243,27 @@ img {
   font-size: 2rem;
   color: #D84040;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .about_values ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .about_values li {
   font-size: 1.1rem;
-  margin: 25px 0;
   color: #EEEEEE;
+  max-width: 700px;
+  line-height: 1.6;
 }
+
 
 /* Clients */
 .about_clients {
@@ -383,4 +308,108 @@ footer {
   text-align: center;
   padding: 20px;
   color: #888;
+}
+
+
+.faq {
+  background: #111;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.accordion-item {
+  background: #222;
+  margin: 10px auto;
+  width: 80%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.accordion-title {
+  color: #3498db;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #1a1a1a;
+  padding: 0 15px;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 120px;
+  padding: 15px;
+}
+
+
+
+
+.popup_section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.popup_section button {
+  background-color: #8E1616;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.popup_overlay {
+  display: none; /* скрыто по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_box {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.close_btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+
+.popup_box form input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup_box button {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
