@@ -242,7 +242,7 @@ nav.menu {
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color .25s ease, transform .2s ease, color 0.3s ease, background 0.3s ease;
+  transition: background-color .25s ease, transform .2s ease;
   align-self: flex-start;
 }
 
